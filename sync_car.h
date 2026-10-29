@@ -6,7 +6,8 @@
 
 typedef struct station{
     pthread_mutex_t mutex1;
-    pthread_cond_t cond1;
+    pthread_cond_t car_left;
+    pthread_cond_t all_seats;
     int count;
 }station;
 
