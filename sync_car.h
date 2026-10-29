@@ -10,7 +10,7 @@ typedef struct station{
     int count;
 }station;
 
-void station_init();
+void station_init(struct station *station);
 
 void station_load_car(struct station *station, int count);
 
