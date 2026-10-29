@@ -17,7 +17,14 @@ void station_init(struct station *station){
 }
 
 void station_load_car(struct station *station, int count){
+    pthread_mutex_t *aux = &station->mutex1;
 
+    pthread_mutex_lock(aux);
+
+    station->count=count;
+    while(count==0 || station->count!=0 ){
+        pthread_mutex_lock(aux)
+    }
 
 }
 
