@@ -6,7 +6,10 @@
 #include <pthread.h>
 #include "sync_car.h"
 
-void station_init(){
+void station_init(struct station *station){
+    pthread_mutex_t *aux = &(station->mutex1);
+    pthread_mutex_init(aux,NULL);
+
 }
 
 void station_load_car(struct station *station, int count){

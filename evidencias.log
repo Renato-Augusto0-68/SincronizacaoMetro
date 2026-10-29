@@ -1,0 +1,46 @@
+Script started on 2026-10-29 15:25:39-03:00 [TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="99" LINES="16"]
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ ls
+[?2004lREADME.md  evidencias.log
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ pk[K[Kok ~run[K[K[K[Kruncot[Kdet[K time
+[?2004lok: command not found
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ [K]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ [K]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ make run
+[?2004lgcc -pthread sync_car.c -o sync_car
+/usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
+(.text+0x1b): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+make: *** [makefile:2: sync_car] Error 1
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ make run
+[?2004lgcc -pthread sync_car-runner.c -o sync_car
+/usr/bin/ld: /tmp/ccdJX70z.o: in function `passenger_thread':
+sync_car-runner.c:(.text+0x20): undefined reference to `station_wait_for_car'
+/usr/bin/ld: /tmp/ccdJX70z.o: in function `load_car_thread':
+sync_car-runner.c:(.text+0x5f): undefined reference to `station_load_car'
+/usr/bin/ld: /tmp/ccdJX70z.o: in function `main':
+sync_car-runner.c:(.text+0x112): undefined reference to `station_init'
+/usr/bin/ld: sync_car-runner.c:(.text+0x165): undefined reference to `station_load_car'
+/usr/bin/ld: sync_car-runner.c:(.text+0x176): undefined reference to `station_load_car'
+/usr/bin/ld: sync_car-runner.c:(.text+0x20d): undefined reference to `station_load_car'
+/usr/bin/ld: sync_car-runner.c:(.text+0x393): undefined reference to `station_on_board'
+collect2: error: ld returned 1 exit status
+make: *** [makefile:2: sync_car] Error 1
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ make run
+[?2004lgcc -pthread sync_car-runner.c -o sync_car sync_car.c
+./sync_car
+car entering station with 36 free seats
+Error: station_load_car returned early!
+make: *** [makefile:5: run] Error 1
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ make clean
+[?2004lrm -f sync_car *.o
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ make clean
+[?2004lrm -f sync_car *.o
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ make clean[2Prun
+[?2004lgcc -pthread sync_car-runner.c -o sync_car sync_car.c
+./sync_car
+car entering station with 8 free seats
+Error: station_load_car returned early!
+make: *** [makefile:5: run] Error 1
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ [K]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ make run
+[?2004lgcc -pthread sync_car-runner.c -o sync_car sync_car.c
+[01m[Ksync_car.c:[m[K In function ‘[01m[Kstation_init[m[K’:
+[01m[Ksync_car.c:11:5:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kptread_mutex_init[m[K’; did you mean ‘[01m[Kpthread_mutex_init[m[K’? [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wimplicit-function-declaration-Wimplicit-function-declaration]8;;[m[K]
+   11 |     [01;35m[Kptread_mutex_init[m[K

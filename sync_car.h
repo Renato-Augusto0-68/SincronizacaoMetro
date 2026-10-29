@@ -5,6 +5,8 @@
 #include <stdio.h>
 
 typedef struct station{
+    pthread_mutex_t mutex1;
+    pthread_cond_t cond1;
     int count;
 }station;
 
