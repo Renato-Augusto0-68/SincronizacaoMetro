@@ -14,6 +14,7 @@ void station_init(struct station *station){
     pthread_cond_init(aux2,NULL);
     pthread_cond_init(aux3,NULL);
     station->count=0;
+    station->free=0;
 }
 
 void station_load_car(struct station *station, int count){
@@ -22,12 +23,12 @@ void station_load_car(struct station *station, int count){
     pthread_mutex_lock(aux);
 
     station->count=count;
-    
-    while(count==0 || station->count!=0 ){
+    station->free=count;
+    while(station->free>0 || station->count>0 ){
         pthread_cond_wait(&station->car_left,aux);
     }
 
-
+    station->free=0;
     pthread_mutex_unlock(aux);
     return;
 }
