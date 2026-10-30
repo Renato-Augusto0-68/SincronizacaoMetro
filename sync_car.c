@@ -24,6 +24,9 @@ void station_load_car(struct station *station, int count){
 
     station->count=count;
     station->free=count;
+    
+    pthread_cond_broadcast(&station->car_left);
+    
     while(station->free>0 || station->count>0 ){
         pthread_cond_wait(&station->car_left,aux);
     }
