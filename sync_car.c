@@ -30,7 +30,10 @@ void station_load_car(struct station *station, int count){
 
 void station_wait_for_car(struct station *station){
     pthread_mutex_t *aux = &station->mutex1;
-    pthread_mutex_unlock(aux);
+    pthread_mutex_lock(aux);
+    //deixa eu ver... se eu espero eu devia TRAVAR... droga!
+    // e travar pra esperar...
+
 
 }
 
