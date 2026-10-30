@@ -27,7 +27,7 @@ void station_load_car(struct station *station, int count){
 
     station->count=count;
     station->free_p=count;
-    
+
     if(station->passageers>0){
         pthread_cond_broadcast(&station->car_left);
     }
@@ -47,17 +47,17 @@ void station_wait_for_car(struct station *station){
         pthread_cond_wait(&station->all_seats,aux);
     }
     station->count=0;
-
-
+    station->passageers--;
     pthread_mutex_unlock(aux);
     return;
 }
 
 void station_on_board(struct station *station){
     pthread_mutex_t *aux = &station->mutex1;
-    
-    if(station->count==0)
+    pthread_mutex_lock(aux);
+
+    if(station->count==0 || station->passageers==0)
         pthread_cond_wait(&station->car_left,aux);
     pthread_cond_signal(&station->all_seats);
-    return;
+
 }
