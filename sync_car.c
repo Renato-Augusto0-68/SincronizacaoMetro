@@ -23,14 +23,14 @@ void station_load_car(struct station *station, int count){
 
     station->count=count;
     while(count==0 || station->count!=0 ){
-        pthread_mutex_lock(aux)
+        pthread_mutex_lock(aux);
     }
 
 }
 
 void station_wait_for_car(struct station *station){
-
-
+    pthread_mutex_t *aux = &station->mutex1;
+    pthread_mutex_unlock(aux);
 
 }
 

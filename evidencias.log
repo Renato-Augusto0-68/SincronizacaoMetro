@@ -43,4 +43,60 @@ make: *** [makefile:5: run] Error 1
 [?2004lgcc -pthread sync_car-runner.c -o sync_car sync_car.c
 [01m[Ksync_car.c:[m[K In function ‘[01m[Kstation_init[m[K’:
 [01m[Ksync_car.c:11:5:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kptread_mutex_init[m[K’; did you mean ‘[01m[Kpthread_mutex_init[m[K’? [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wimplicit-function-declaration-Wimplicit-function-declaration]8;;[m[K]
-   11 |     [01;35m[Kptread_mutex_init[m[K
+   11 |     [01;35m[Kptread_mutex_init[m[K(aux,NULL);
+      |     [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+      |     [32m[Kpthread_mutex_init[m[K
+/usr/bin/ld: /tmp/ccJu3Z7N.o: in function `station_init':
+sync_car.c:(.text+0x2a): undefined reference to `ptread_mutex_init'
+collect2: error: ld returned 1 exit status
+make: *** [makefile:2: sync_car] Error 1
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ make run
+[?2004lgcc -pthread sync_car-runner.c -o sync_car sync_car.c
+./sync_car
+car entering station with 34 free seats
+Error: station_load_car returned early!
+make: *** [makefile:5: run] Error 1
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ make clean
+[?2004lrm -f sync_car *.o
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ make run
+[?2004lgcc -pthread sync_car-runner.c -o sync_car sync_car.c
+./sync_car
+car entering station with 8 free seats
+Error: station_load_car returned early!
+make: *** [makefile:5: run] Error 1
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ make cleean
+[?2004lmake: *** No rule to make target 'cleean'.  Stop.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ make cleean[1Pn[1Pnan
+[?2004lrm -f sync_car *.o
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ make clean
+[?2004lrm -f sync_car *.o
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ make cleanean[3Prun
+[?2004lgcc -pthread sync_car-runner.c -o sync_car sync_car.c
+./sync_car
+car entering station with 25 free seats
+Error: station_load_car returned early!
+make: *** [makefile:5: run] Error 1
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ make runclean
+[?2004lrm -f sync_car *.o
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ make clean[2Prun
+[?2004lgcc -pthread sync_car-runner.c -o sync_car sync_car.c
+./sync_car
+car entering station with 15 free seats
+Error: station_load_car returned early!
+make: *** [makefile:5: run] Error 1
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ make runclean
+[?2004lrm -f sync_car *.o
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ make clean[Kmaaker[K[K[K[Kak[K[Kke run
+[?2004lgcc -pthread sync_car-runner.c -o sync_car sync_car.c
+./sync_car
+Error: Failed to complete after 1 seconds. Something's wrong, or your system is terribly slow. Possible error hint: [station_load_car() did not return immediately when no waiting passengers]
+make: *** [makefile:5: run] Error 1
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ make runclean
+[?2004lrm -f sync_car *.o
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ make clean[2Prun
+[?2004lgcc -pthread sync_car-runner.c -o sync_car sync_car.c
+[01m[Ksync_car.c:[m[K In function ‘[01m[Kstation_load_car[m[K’:
+[01m[Ksync_car.c:26:32:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K}[m[K’ token
+   26 |         pthread_mutex_lock(aux)
+      |                                [01;31m[K^[m[K
+      |                                [3
