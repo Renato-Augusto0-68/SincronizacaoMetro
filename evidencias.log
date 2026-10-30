@@ -99,4 +99,91 @@ make: *** [makefile:5: run] Error 1
 [01m[Ksync_car.c:26:32:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K}[m[K’ token
    26 |         pthread_mutex_lock(aux)
       |                                [01;31m[K^[m[K
-      |                                [3
+      |                                [3Script started on 2026-10-30 13:32:47-03:00 [TERM="xterm-256color" TTY="/dev/pts/6" COLUMNS="149" LINES="16"]
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ [K]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ make runclean[2Prun
+[?2004lgcc -pthread sync_car-runner.c -o sync_car sync_car.c
+./sync_car
+Error: Failed to complete after 1 seconds. Something's wrong, or your system is terribly slow. Possible error hint: [station_load_car() did not return immediately when no waiting passengers]
+make: *** [makefile:5: run] Error 1
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ make runclean
+[?2004lrm -f sync_car *.o
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ make clean[2Prun
+[?2004lgcc -pthread sync_car-runner.c -o sync_car sync_car.c
+./sync_car
+Error: Failed to complete after 1 seconds. Something's wrong, or your system is terribly slow. Possible error hint: [station_load_car() did not return immediately when no waiting passengers]
+make: *** [makefile:5: run] Error 1
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ make runclean
+[?2004lrm -f sync_car *.o
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ make clean[2Prun
+[?2004lgcc -pthread sync_car-runner.c -o sync_car sync_car.c
+./sync_car
+Error: Failed to complete after 1 seconds. Something's wrong, or your system is terribly slow. Possible error hint: [station_load_car() did not return immediately when no waiting passengers]
+make: *** [makefile:5: run] Error 1
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ make clean
+[?2004lrm -f sync_car *.o
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ make clean
+[?2004lrm -f sync_car *.o
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ make clean[2Prun
+[?2004lgcc -pthread sync_car-runner.c -o sync_car sync_car.c
+./sync_car
+Error: Failed to complete after 1 seconds. Something's wrong, or your system is terribly slow. Possible error hint: [station_load_car() did not return immediately when no waiting passengers]
+make: *** [makefile:5: run] Error 1
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ make run
+[?2004lgcc -pthread sync_car-runner.c -o sync_car sync_car.c
+./sync_car
+Error: Failed to complete after 1 seconds. Something's wrong, or your system is terribly slow. Possible error hint: [station_load_car() did not return immediately when no waiting passengers]
+make: *** [makefile:5: run] Error 1
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ make run[Kmake run
+[?2004lgcc -pthread sync_car-runner.c -o sync_car sync_car.c
+./sync_car
+Error: Failed to complete after 1 seconds. Something's wrong, or your system is terribly slow. Possible error hint: [station_load_car() did not return immediately when no waiting passengers]
+make: *** [makefile:5: run] Error 1
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ make runclean
+[?2004lrm -f sync_car *.o
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ make clean[2Prun
+[?2004lgcc -pthread sync_car-runner.c -o sync_car sync_car.c
+./sync_car
+Error: Failed to complete after 1 seconds. Something's wrong, or your system is terribly slow. Possible error hint: [station_load_car() did not return immediately when no waiting passengers]
+make: *** [makefile:5: run] Error 1
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ make run
+[?2004l./sync_car
+Error: Failed to complete after 1 seconds. Something's wrong, or your system is terribly slow. Possible error hint: [station_load_car() did not return immediately when no waiting passengers]
+make: *** [makefile:5: run] Error 1
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ make run[Kmake runclean
+[?2004lrm -f sync_car *.o
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ make clean[2Prun
+[?2004lgcc -pthread sync_car-runner.c -o sync_car sync_car.c
+[01m[Ksync_car.c:[m[K In function ‘[01m[Kstation_load_car[m[K’:
+[01m[Ksync_car.c:26:5:[m[K [01;31m[Kerror: [m[Ktoo few arguments to function ‘[01m[Kpthread_cond_wait[m[K’
+   26 |     [01;31m[Kpthread_cond_wait[m[K();
+      |     [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[Ksync_car.c:6[m[K:
+[01m[K/usr/include/pthread.h:1133:12:[m[K [01;36m[Knote: [m[Kdeclared here
+ 1133 | extern int [01;36m[Kpthread_cond_wait[m[K (pthread_cond_t *__restrict __cond,
+      |            [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+make: *** [makefile:2: sync_car] Error 1
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ make run
+[?2004lgcc -pthread sync_car-runner.c -o sync_car sync_car.c
+./sync_car
+Error: Failed to complete after 1 seconds. Something's wrong, or your system is terribly slow. Possible error hint: [station_load_car() did not return immediately when no waiting passengers]
+make: *** [makefile:5: run] Error 1
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ make runclean[2Prunclean
+[?2004lrm -f sync_car *.o
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ make clean[2Prun
+[?2004lgcc -pthread sync_car-runner.c -o sync_car sync_car.c
+./sync_car
+Error: Failed to complete after 1 seconds. Something's wrong, or your system is terribly slow. Possible error hint: [station_load_car() did not return immediately when no waiting passengers]
+make: *** [makefile:5: run] Error 1
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ make runclean
+[?2004lrm -f sync_car *.o
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ make clean[2Prun
+[?2004lgcc -pthread sync_car-runner.c -o sync_car sync_car.c
+./sync_car
+Error: Failed to complete after 1 seconds. Something's wrong, or your system is terribly slow. Possible error hint: [station_load_car() did not return immediately when no waiting passengers]
+make: *** [makefile:5: run] Error 1
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ make runclean
+[?2004lrm -f sync_car *.o
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ make clean[2Prun
+[?2004lgcc -pthread sync_car-runner.c -o sync_car sync_car.c
+./sync_car
+Error: Failed to complete after 1 seconds. Something's wrong, or your system is terribly slow. Possible error hint: [station_load_car() did not return immediatel

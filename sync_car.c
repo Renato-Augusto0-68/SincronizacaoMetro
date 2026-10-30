@@ -22,21 +22,27 @@ void station_load_car(struct station *station, int count){
     pthread_mutex_lock(aux);
 
     station->count=count;
+    
     while(count==0 || station->count!=0 ){
-        pthread_mutex_lock(aux);
+        pthread_cond_wait(&station->car_left,aux);
     }
 
+
+    pthread_mutex_unlock(aux);
+    return;
 }
 
 void station_wait_for_car(struct station *station){
     pthread_mutex_t *aux = &station->mutex1;
     pthread_mutex_lock(aux);
-    //deixa eu ver... se eu espero eu devia TRAVAR... droga!
-    // e travar pra esperar...
-
-
+    return;
 }
 
 void station_on_board(struct station *station){
-
+    pthread_mutex_t *aux = &station->mutex1;
+    
+    if(station->count==0)
+        pthread_cond_wait(&station->car_left,aux);
+    pthread_cond_signal(&station->all_seats);
+    return;
 }
