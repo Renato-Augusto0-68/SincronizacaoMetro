@@ -9,7 +9,8 @@ typedef struct station{
     pthread_cond_t car_left;
     pthread_cond_t all_seats;
     int count;
-    int free;
+    int free_p;
+    int passageers;
 }station;
 
 void station_init(struct station *station);
