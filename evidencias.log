@@ -527,3 +527,105 @@ Looks good!
 exit
 
 Script done on 2026-10-30 21:49:47-03:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2026-10-31 09:15:44-03:00 [TERM="xterm-256color" TTY="/dev/pts/6" COLUMNS="159" LINES="16"]
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ script -a evidencias.log[14Pmake cleanr[2Prun
+[?2004lgcc -pthread sync_car-runner.c -o sync_car sync_car.c
+./sync_car
+car entering station with 13 free seats
+car departed station with 13 new passenger(s) (expected 13)
+car entering station with 23 free seats
+car departed station with 23 new passenger(s) (expected 23)
+car entering station with 17 free seats
+car departed station with 17 new passenger(s) (expected 17)
+car entering station with 8 free seats
+car departed station with 8 new passenger(s) (expected 8)
+car entering station with 11 free seats
+car departed station with 11 new passenger(s) (expected 11)
+car entering station with 19 free seats
+car departed station with 19 new passenger(s) (expected 19)
+car entering station with 12 free seats
+car departed station with 9 new passenger(s) (expected 9)
+Looks good!
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ make runscript -a evidencias.log[14Pmake clean
+[?2004lrm -f sync_car *.o
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ [K]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ [K]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ [K]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ make clean[2Prun
+[?2004lgcc -pthread sync_car-runner.c -o sync_car sync_car.c
+./sync_car
+car entering station with 4 free seats
+car departed station with 4 new passenger(s) (expected 4)
+car entering station with 43 free seats
+car departed station with 43 new passenger(s) (expected 43)
+car entering station with 19 free seats
+car departed station with 19 new passenger(s) (expected 19)
+car entering station with 40 free seats
+car departed station with 34 new passenger(s) (expected 34)
+Looks good!
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ [K]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ mak ce clean
+[?2004lCommand 'makce' not found, did you mean:
+  command 'mace' from snap mace (0.2.0)
+  command 'make' from deb make (4.3-4.1build1)
+  command 'make' from deb make-guile (4.3-4.1build1)
+See 'snap info <snapname>' for additional versions.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ mak e clear
+[?2004lmake: *** No rule to make target 'clear'.  Stop.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ make clearce clean
+[?2004lCommand 'makce' not found, did you mean:
+  command 'mace' from snap mace (0.2.0)
+  command 'make' from deb make (4.3-4.1build1)
+  command 'make' from deb make-guile (4.3-4.1build1)
+See 'snap info <snapname>' for additional versions.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ [K]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ makce clean[1Pe clear[Kn
+[?2004lrm -f sync_car *.o
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ make clean[1@c[C[C[C[C[C[C[C
+[?2004lCommand 'makce' not found, did you mean:
+  command 'mace' from snap mace (0.2.0)
+  command 'make' from deb make (4.3-4.1build1)
+  command 'make' from deb make-guile (4.3-4.1build1)
+See 'snap info <snapname>' for additional versions.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ makce clean[1P[C[C[C[C[C[C[C[1@c[C[C[C[C[C[C[C[1P[C[C[C[C[C[C[C[K[K[K[Kru[K[K[Krun
+[?2004lgcc -pthread sync_car-runner.c -o sync_car sync_car.c
+./sync_car
+car entering station with 1 free seats
+car departed station with 1 new passenger(s) (expected 1)
+car entering station with 30 free seats
+Error: Failed to complete after 2 seconds. Something's wrong, or your system is terribly slow. Possible error hint: [Some more complicated issue appears to have caused passengers not to board when given the opportunity]
+make: *** [makefile:5: run] Error 1
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ make runce clean[1P[C[C[C[C[C[C[C
+[?2004lrm -f sync_car *.o
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ [K]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ [K]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ make u[Krun
+[?2004lgcc -pthread sync_car-runner.c -o sync_car sync_car.c
+./sync_car
+car entering station with 38 free seats
+car departed station with 38 new passenger(s) (expected 38)
+car entering station with 18 free seats
+car departed station with 18 new passenger(s) (expected 18)
+car entering station with 29 free seats
+car departed station with 29 new passenger(s) (expected 29)
+car entering station with 4 free seats
+car departed station with 4 new passenger(s) (expected 4)
+car entering station with 26 free seats
+car departed station with 11 new passenger(s) (expected 11)
+Looks good!
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ make runclean
+[?2004lrm -f sync_car *.o
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ [K]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ [K]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ make clean[2Prun
+[?2004lgcc -pthread sync_car-runner.c -o sync_car sync_car.c
+[01m[Ksync_car.c:[m[K In function ‘[01m[Kstation_load_car[m[K’:
+[01m[Ksync_car.c:66:1:[m[K [01;31m[Kerror: [m[Kexpected declaration or statement at end of input
+   66 | [01;31m[K}[m[K
+      | [01;31m[K^[m[K
+make: *** [makefile:2: sync_car] Error 1
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ make runclean
+[?2004lrm -f sync_car *.o
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ make clean[2Prun
+[?2004lgcc -pthread sync_car-runner.c -o sync_car sync_car.c
+./sync_car
+car entering station with 10 free seats
+Error: station_load_car returned early!
+make: *** [makefile:5: run] Error 1
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ make run
+[?2004l./sync_car
+car entering station with 46 free seats
+Error: station_load_car returned early!
+make: *** [makefile:5: run] Error 1
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m
