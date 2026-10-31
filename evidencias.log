@@ -451,4 +451,79 @@ make: *** [makefile:5: run] Error 1
 ./sync_car
 car entering station with 8 free seats
 Error: Failed to complete after 2 seconds. Something's wrong, or your system is terribly slow. Possible error hint: [Some more complicated issue appears to have caused passengers not to board when given the opportunity]
-make: *** [m
+make: *** [makefile:5: run] Error 1
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ make runclean
+[?2004lrm -f sync_car *.o
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ make clean[2Prun
+[?2004lgcc -pthread sync_car-runner.c -o sync_car sync_car.c
+./sync_car
+car entering station with 0 free seats
+car departed station with 0 new passenger(s) (expected 0)
+car entering station with 28 free seats
+car departed station with 28 new passenger(s) (expected 28)
+car entering station with 2 free seats
+car departed station with 2 new passenger(s) (expected 2)
+car entering station with 20 free seats
+car departed station with 20 new passenger(s) (expected 20)
+car entering station with 19 free seats
+car departed station with 19 new passenger(s) (expected 19)
+car entering station with 37 free seats
+car departed station with 31 new passenger(s) (expected 31)
+Looks good!
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ make clean
+[?2004lrm -f sync_car *.o
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ make clean
+[?2004lrm -f sync_car *.o
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ make clean[2Prun
+[?2004lgcc -pthread sync_car-runner.c -o sync_car sync_car.c
+./sync_car
+car entering station with 3 free seats
+car departed station with 3 new passenger(s) (expected 3)
+car entering station with 9 free seats
+car departed station with 9 new passenger(s) (expected 9)
+car entering station with 21 free seats
+car departed station with 21 new passenger(s) (expected 21)
+car entering station with 23 free seats
+car departed station with 23 new passenger(s) (expected 23)
+car entering station with 3 free seats
+car departed station with 3 new passenger(s) (expected 3)
+car entering station with 18 free seats
+car departed station with 18 new passenger(s) (expected 18)
+car entering station with 40 free seats
+car departed station with 23 new passenger(s) (expected 23)
+Looks good!
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ make runclean
+[?2004lrm -f sync_car *.o
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ make clean[2Prun
+[?2004lgcc -pthread sync_car-runner.c -o sync_car sync_car.c
+./sync_car
+car entering station with 8 free seats
+car departed station with 8 new passenger(s) (expected 8)
+car entering station with 44 free seats
+car departed station with 44 new passenger(s) (expected 44)
+car entering station with 30 free seats
+car departed station with 30 new passenger(s) (expected 30)
+car entering station with 11 free seats
+car departed station with 11 new passenger(s) (expected 11)
+car entering station with 18 free seats
+car departed station with 7 new passenger(s) (expected 7)
+Looks good!
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ make clear
+[?2004lmake: *** No rule to make target 'clear'.  Stop.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ make clear[2Prun
+[?2004l./sync_car
+car entering station with 48 free seats
+car departed station with 48 new passenger(s) (expected 48)
+car entering station with 39 free seats
+car departed station with 39 new passenger(s) (expected 39)
+car entering station with 44 free seats
+car departed station with 13 new passenger(s) (expected 13)
+Looks good!
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ make runclear
+[?2004lmake: *** No rule to make target 'clear'.  Stop.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ make clear[Kn
+[?2004lrm -f sync_car *.o
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/SincronizacaoMetro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/SincronizacaoMetro[00m$ [?2004l
+exit
+
+Script done on 2026-10-30 21:49:47-03:00 [COMMAND_EXIT_CODE="0"]
