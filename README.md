@@ -10,7 +10,7 @@ projeto da cadeira de Infraestrutura de Software (SO), do professor Marcelo Arco
 #### Implementado em Windows (através de WSL)
 ## Arquivos usados:
 
-- sync-car-runner.c (teste para verificar compatibilidade)
+- sync_car-runner.c (teste para verificar compatibilidade)
 
 - sync_car.c (funções implementadas atraves de POSIX, via pthreads, apenas utilizando de mutex e cond, pelas funções prototipadas em sync_car.h)
 
